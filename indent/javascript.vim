@@ -272,7 +272,7 @@ function s:IndentWithContinuation(lnum, ind, width)
   " indents an extra level.
   if s:Match(lnum, s:continuation_regex)
     if lnum == p_lnum
-      return msl_ind + a:width
+      return msl_ind + 2 * a:width
     else
       return msl_ind
     end
